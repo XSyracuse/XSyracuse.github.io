@@ -1,0 +1,1103 @@
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+     
+        <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:300' rel='stylesheet' type='text/css'>
+
+        <meta charset="utf-8">
+        <title>737</title>
+      </head>
+      
+      <body bgcolor= "#5B686D" onLoad = loadIt();>
+    
+        <svg width="900" height="800">
+        
+          <defs>
+            <clipPath id="pitchclippath">
+              <circle cx="0" cy="0" r="76"/>
+            </clipPath>
+            <clipPath id="pfdclippath">
+              <circle cx="80" cy="80" r="76"/>
+            </clipPath>
+            <clipPath id="hsiclippath">
+              <rect x="600" y="310" rx="5" ry="5" width="280" height="360"/>
+            </clipPath>
+            
+          </defs>
+          <defs>
+            <clipPath id="h2">
+              <polygon points="-130,10 130,10 130,350 -130,350" fill="#ffffff" stroke="#000000"/>
+            </clipPath>
+          </defs>
+          
+        <g id="fuelgauge1">
+          <circle id="fuelNo1" cx="100" cy="600" r="45" stroke="white" stroke-width="0" fill="darkblue" />
+          <path id="arc10" fill="none" stroke="#446688" stroke-width="4" />
+          <path id="arc11" fill="none" stroke="#94B6D8" stroke-width="10" />
+          <path id="FT1_1k"  fill="none" stroke-linecap="butt" stroke="#ffffff" stroke-width="1.2" />
+          <path id="FT1_100" fill="none" stroke-linecap="butt" stroke="#ffffff" stroke-width="1.2" />
+          <path id="FT1_10"  fill="none" stroke-linecap="butt" stroke="#ffffff" stroke-width="1.2" />
+          <path id="FT1_1"   fill="none" stroke-linecap="butt" stroke="#ffffff" stroke-width="1.2" />
+        </g>
+        
+        <g id="fuelgauge2">
+          <circle id="fuelNo2" cx="200" cy="600" r="45" stroke="white" stroke-width="0" fill="darkblue" />
+          <path id="arc20" fill="none" stroke="#446688" stroke-width="4" />
+          <path id="arc21" fill="none" stroke="#94B6D8" stroke-width="10" />
+      
+          <path id="FT2_1k"  fill="none" stroke-linecap="butt" stroke="#ffffff" stroke-width="1.2" />
+          <path id="FT2_100" fill="none" stroke-linecap="butt" stroke="#ffffff" stroke-width="1.2" />
+          <path id="FT2_10"  fill="none" stroke-linecap="butt" stroke="#ffffff" stroke-width="1.2" />
+          <path id="FT2_1"   fill="none" stroke-linecap="butt" stroke="#ffffff" stroke-width="1.2" />
+        </g>
+        
+        <g id="fuelgaugeC">
+          <circle id="fuelC" cx="150" cy="500" r="48" stroke="#808080" stroke-width="4" fill="darkblue" />
+          <path id="arcctr0" fill="none" stroke="#446688" stroke-width="4" />
+          <path id="arcctr1" fill="none" stroke="#94B6D8" stroke-width="10" />
+        
+          <path id="FTCTR_10k" fill="none" stroke-linecap="butt" stroke="#ffffff" stroke-width="1.2" />
+          <path id="FTCTR_1k"  fill="none" stroke-linecap="butt" stroke="#ffffff" stroke-width="1.2" />
+          <path id="FTCTR_100" fill="none" stroke-linecap="butt" stroke="#ffffff" stroke-width="1.2" />
+          <path id="FTCTR_10"  fill="none" stroke-linecap="butt" stroke="#ffffff" stroke-width="1.2" />
+          <path id="FTCTR_1"   fill="none" stroke-linecap="butt" stroke="#ffffff" stroke-width="1.2" />
+        </g>
+
+
+        <g id="Engine1_N1" transform="translate(100,150)">
+        <circle id="E1N1" cx="0" cy="0" r="60" stroke="white" stroke-width="0" fill="black" />
+        <path id="arcN1" fill="none" stroke="#94B6D8" stroke-width="3" />
+        <path id="arcN1green" fill="none" stroke="#00ff00" stroke-width="4" />
+        <path id="arcN1red" fill="none" stroke="#ff0000" stroke-width="3" />
+        <path id="arcN1white" fill="none" stroke="#94B6D8" stroke-width="3" />
+        <path id="N1marker" fill="none" stroke="orange" stroke-width="1.5" />
+
+        <path id="E1N1_0" fill="none" stroke="white" stroke-width="1.5" />
+        <path id="E1N1_1" fill="none" stroke="white" stroke-width="1.5" />
+        <path id="E1N1_2" fill="none" stroke="white" stroke-width="1.5" />
+        <path id="E1N1_3" fill="none" stroke="white" stroke-width="1.5" />
+        <path id="E1N1_4" fill="none" stroke="white" stroke-width="1.5" />
+        <path id="E1N1_5" fill="none" stroke="white" stroke-width="1.5" />
+        <path id="E1N1_6" fill="none" stroke="white" stroke-width="1.5" />
+        <path id="E1N1_7" fill="none" stroke="white" stroke-width="1.5" />
+        <path id="E1N1_8" fill="none" stroke="white" stroke-width="1.5" />
+        <path id="E1N1_9" fill="none" stroke="white" stroke-width="1.5" />
+        <path id="E1N1_10" fill="none" stroke="white" stroke-width="1.5" />
+        <path id="E1N1_11" fill="none" stroke="red"   stroke-width="2.0" />
+        <path id="E1N1_12" fill="none" stroke="white" stroke-width="1.5" />
+        </g>
+        
+        <g id="Engine2_N1" transform="translate(220,150)">
+        <circle id="E2N1" cx="0" cy="0" r="60" stroke="white" stroke-width="0" fill="black" />
+        <path id="E2N1arc" fill="none" stroke="#94B6D8" stroke-width="3" />
+        <path id="E2N1arcgreen" fill="none" stroke="#00ff00" stroke-width="4" />
+        <path id="E2N1arcred" fill="none" stroke="#ff0000" stroke-width="3" />
+        <path id="E2N1arcwhite" fill="none" stroke="#94B6D8" stroke-width="3" />
+        
+        <path id="E2N1_0" fill="none" stroke="white" stroke-width="1.5" />
+        <path id="E2N1_1" fill="none" stroke="white" stroke-width="1.5" />
+        <path id="E2N1_2" fill="none" stroke="white" stroke-width="1.5" />
+        <path id="E2N1_3" fill="none" stroke="white" stroke-width="1.5" />
+        <path id="E2N1_4" fill="none" stroke="white" stroke-width="1.5" />
+        <path id="E2N1_5" fill="none" stroke="white" stroke-width="1.5" />
+        <path id="E2N1_6" fill="none" stroke="white" stroke-width="1.5" />
+        <path id="E2N1_7" fill="none" stroke="white" stroke-width="1.5" />
+        <path id="E2N1_8" fill="none" stroke="white" stroke-width="1.5" />
+        <path id="E2N1_9" fill="none" stroke="white" stroke-width="1.5" />
+        <path id="E2N1_10" fill="none" stroke="white" stroke-width="1.5" />
+        <path id="E2N1_11" fill="none" stroke="red"   stroke-width="2.0" />
+        <path id="E2N1_12" fill="none" stroke="white" stroke-width="1.5" />
+        
+        <path id="E2N1marker" fill="none" stroke="orange" stroke-width="1.5" />
+        </g>
+        
+        <rect id="PFD_bildscherm" x="600" y="60" rx="5" ry="5" width="280" height="230" style="fill:rgb(91,90,108);stroke:rgb(0,0,0);stroke-width:0;opacity:1.0" />
+        <rect id="PFD_bild" x="610" y="80" rx="20" ry="20" width="260" height="195" style="fill:rgb(0,0,0);stroke:rgb(91,90,108);stroke-width:0;opacity:1.0" />
+        
+        <g id="oldthings" display="none">
+        <rect id="PFD_speed_awareness" x=625 y=100 width="10" height="160" style="fill:rgb(187,30,16);stroke-width:0;stroke:rgb(0,0,0)" />
+        <rect id="PFD_altitude_awareness" x=850 y=100 width="10" height="160" style="fill:rgb(240,146,0);stroke-width:0;stroke:rgb(0,0,0)" />
+        </g>
+        
+        <g id="fastslowind" transform="translate(630,180)">
+         <polygon id="target" transform="translate(0,-40) "fill="none" stroke="#ffffff" stroke-width="2" points="0,5 2.5,0 0,-5 -2.5,0"/>
+         <polygon id="target" fill="none" stroke="#ffffff" stroke-width="2" points="0,10 5,0 0,-10 -5,0"/>
+         <polygon id="target" transform="translate(0,40) "fill="none" stroke="#ffffff" stroke-width="2" points="0,5 2.5,0 0,-5 -2.5,0"/>
+          
+        </g>
+        
+        
+        <rect id="ADI_sky" transform="translate(660,100)" width="160" height="160" style="fill:rgb(0,124,176);stroke-width:0.8;stroke:rgb(255,255,255)" clip-path="url(#pfdclippath)"/>
+        <polygon id="ADI_ground" transform="translate(660,100)" style="fill:rgb(180,86,0);stroke:rgb(255,255,255);stroke-width:1.5" clip-path="url(#pfdclippath)"/>
+       
+       
+        <path id="ADI_roll" transform="translate(660,100)"    fill="none" stroke="#ffffff" stroke-width="2" />
+        <path id="ADI_roll0" transform="translate(660,100)"   fill="none" stroke="#ffffff" stroke-width="2" />
+        <path id="ADI_roll10" transform="translate(660,100)"  fill="none" stroke="#ffffff" stroke-width="2" />
+        <path id="ADI_roll10n" transform="translate(660,100)" fill="none" stroke="#ffffff" stroke-width="2" />
+        <path id="ADI_roll20" transform="translate(660,100)"  fill="none" stroke="#ffffff" stroke-width="2" />
+        <path id="ADI_roll20n" transform="translate(660,100)" fill="none" stroke="#ffffff" stroke-width="2" />
+        <path id="ADI_roll30" transform="translate(660,100)"  fill="none" stroke="#ffffff" stroke-width="2" />
+        <path id="ADI_roll30n" transform="translate(660,100)" fill="none" stroke="#ffffff" stroke-width="2" />
+        <path id="ADI_roll45" transform="translate(660,100)"  fill="none" stroke="#ffffff" stroke-width="2" />
+        <path id="ADI_roll45n" transform="translate(660,100)" fill="none" stroke="#ffffff" stroke-width="2" />
+        <path id="ADI_roll60" transform="translate(660,100)"  fill="none" stroke="#ffffff" stroke-width="2" />
+        <path id="ADI_roll60n" transform="translate(660,100)" fill="none" stroke="#ffffff" stroke-width="2" />
+        
+        
+        <polygon id="ADI_indicator" transform="translate(700,180)" fill="#ffffff" stroke="#ffffff" stroke-width="2" points="0,60 -8,60 0,73 8,60 0,60"/>
+        
+        
+        <g id="pitch_bars" transform="translate(740,181)" clip-path="url(#pitchclippath)">
+          
+          <g id="ADI_pitch_10">
+              <text x="30" y="-56" font-size="12" stroke-width="1" fill="#ffffff" stroke="#ffffff" font-family="Roboto Condensed">20</text>
+              <text x="-40" y="-56" font-size="12" stroke-width="1" fill="#ffffff" stroke="#ffffff" font-family="Roboto Condensed">20</text>
+              <text x="30" y="-26" font-size="12" stroke-width="1" fill="#ffffff" stroke="#ffffff" font-family="Roboto Condensed">10</text>
+              <text x="-40" y="-26" font-size="12" stroke-width="1" fill="#ffffff" stroke="#ffffff" font-family="Roboto Condensed">10</text>
+              <text x="30" y="34" font-size="12" stroke-width="1" fill="#ffffff" stroke="#ffffff" font-family="Roboto Condensed">10</text>
+              <text x="-40" y="34" font-size="12" stroke-width="1" fill="#ffffff" stroke="#ffffff" font-family="Roboto Condensed">10</text>
+              <text x="30" y="64" font-size="12" stroke-width="1" fill="#ffffff" stroke="#ffffff" font-family="Roboto Condensed">20</text>
+              <text x="-40" y="64" font-size="12" stroke-width="1" fill="#ffffff" stroke="#ffffff" font-family="Roboto Condensed">20</text>
+              
+              <path id="ADI_pitch" fill="none" stroke="white" stroke-width="1.5" />
+          </g>
+        
+        </g>
+        <path id="ADI_level_wings" transform="translate(740,178)" fill="black" stroke="white" stroke-width="2.0" />
+        
+        <g id="flightdirector" transform="translate(740,181)" clip-path="url(#pitchclippath)">
+          
+          <path id="fd_vert" fill="none" stroke="magenta" stroke-width="1.5" />
+          <path id="fd_hor"  fill="none" stroke="magenta" stroke-width="1.5" />
+          
+        </g>
+        <g id="mode" transform="translate(600,70)">
+          <text x="30" y="20" font-size="12" stroke-width="0.1" fill="#00ff00" stroke="#ffffff" font-family="Roboto Condensed">FMC SPEED | VNAV PATH | HDG SEL | CMD</text>
+        </g>
+        
+        <rect id="HSI_bildscherm" x="600" y="310" rx="5" ry="5" width="280" height="360" style="fill:rgb(91,90,108);stroke:rgb(91,90,108);stroke-width:0;opacity:1.0" />
+        <rect id="HSI_bild" x="610" y="320" rx="5" ry="5" width="260" height="340" style="fill:rgb(0,0,0);stroke:rgb(91,90,108);stroke-width:0;opacity:1.0" />
+        
+        <g id="hsi"  transform="translate(740,310)" clip-path="url(#h2)">
+          <g id="waypoints" stroke="green" fill="none" stroke-width="2">
+            <circle cx="25" cy="25" r="5"/>
+            <circle cx="40" cy="25" r="5"/>
+            <circle cx="55" cy="25" r="5"/>
+            <circle cx="70" cy="25" r="5"/>
+          </g>
+          <g id="range" fill="none" stroke="#ffffff" stroke-width="1">
+            <path id="range1"/>
+            <path id="range2"/>
+            <path id="range3"/>
+            <path id="range4"/>
+          </g>
+          <g id="sectors" stroke-width="1" stroke="green" fill="none" stroke-width="2">
+            <circle cx="25" cy="150" r="30" stroke="lime" fill="none" stroke-dasharray="4"/>
+     
+          </g>
+        </g>
+        
+        <rect transform="translate(610,320)" width="260" height="340" style="fill:rgb(0,124,176);opacity:0.2;stroke-width:0;stroke:rgb(0,0,0)" />
+          
+        </svg>
+        
+      </body>
+      
+      <form name="myform">
+      <p>
+     <textarea name="outputtext" rows="5" cols="50"></textarea>
+     </p>
+     <p>
+     <textarea name="inputtext" cols="50"></textarea>
+     </p>
+     <p>
+     <textarea name="url" cols="50"></textarea>
+     </p>
+     <p>
+     <input type="button" name=sendButton value="Send" onClick="sendText();">
+     <input type="button" name=clearButton value="Clear" onClick="clearText();">
+     <input type="button" name=disconnectButton value="Disconnect" onClick="doDisconnect();">
+     <input type="button" name=connectButton value="Connect" onClick="doConnect();">
+     </p>
+
+
+     </form>
+   <script>
+   //RAL3020 rgb(187, 30, 16);
+   //RAL7031 rgb(91,104,109);  
+   //RAL3026 255,42,27
+   //RAL5015 0,124,176
+   //RAL1036 128,100,63
+   //RAL1037 240,246,0
+   
+   
+   function rotate(p,angle) {
+     var a = -angle *  Math.PI/180.0;
+     var xp = p.x * Math.cos(a) - p.y * Math.sin(a);
+     var yp = p.y * Math.cos(a) + p.x * Math.sin(a);
+     return {
+       x: xp,
+       y: yp
+     };
+   }
+   
+   function xlate(p,x,y) {
+     return {
+       x: p.x + x,
+       y: p.y + y
+     };
+   }
+   
+   function set_ADI_pitch_scale() {
+   
+     /*
+     var pitch5 = "M -10 -15 L 10 -15 ";
+     var pitch10 = "M -30 -30 L 30 -30 ";
+     var pitch15 = "M -10 -45 L 10 -45 ";
+     var pitch20 = "M -30 -60 L 30 -60 ";
+     var pitchn5 = "M -10 15 L 10 15 ";
+     var pitchn10 = "M -30 30 L 30 30 ";
+     var pitchn15 = "M -10 45 L 10 45 ";
+     var pitchn20 = "M -30 60 L 30 60 ";
+     
+     var pitch25 = "M -10 -7.5 L 10 -7.5 ";
+     var pitchn25 = "M -10 7.5 L 10  7.5 ";
+     
+     
+     var pitchscale  = pitch25 + pitch5 + pitch10 + pitch15 + pitch20 + pitchn5
+     var npitchscale = pitchn25 + pitchn10 + pitchn15 + pitchn20;
+     pitchscale = pitchscale + npitchscale;
+     */
+     //document.getElementById("ADI_pitch_10").setAttribute("d",pitchscale);
+     
+     //wings level
+     //document.getElementById("ADI_level_wings").setAttribute("d", 
+     //  "M 20 0 L 60 0 L 60 5 L 25 5 L 25 15 L 20 15 Z M -20 0 L -60 0 L -60 5 L -25 5 L -25 15 L -20 15 Z M -2.5 0 L 2.5 0 L 2.5 5 L -2.5 5 Z");
+   }
+  
+   //function set_ADI_pitch_scale_y(y) {
+   var set_ADI_pitch_scale_y = (function(){ 
+     
+     var y = 0;
+  
+     var pitch5  =  ["M -15", -15+y, "L 15", -15+y, " "].join(" ");
+     var pitch10 =  ["M -25", -30+y, "L 25", -30+y, " "].join(" ");
+     var pitch15 =  ["M -15", -45+y, "L 15", -45+y, " "].join(" ");
+     var pitch20 =  ["M -25", -60+y, "L 25", -60+y, " "].join(" ");
+     var pitchn5 =  ["M -15",  15+y, "L 15",  15+y, " "].join(" ");
+     var pitchn10 = ["M -25",  30+y, "L 25",  30+y, " "].join(" ");
+     var pitchn15 = ["M -15",  45+y, "L 15",  45+y, " "].join(" ");
+     var pitchn20 = ["M -25",  60+y, "L 25",  60+y, " "].join(" ");
+     
+     var pitch25  = ["M -7.5", -7.5+y, "L 7.5", -7.5+y, " "].join(" ");
+     var pitchn25 = ["M -7.5",  7.5+y, "L 7.5",  7.5+y, " "].join(" ");
+     
+     var pitch75  = ["M -7.5", -22.5+y, "L 7.5", -22.5+y, " "].join(" ");
+     var pitchn75 = ["M -7.5",  22.5+y, "L 7.5",  22.5+y, " "].join(" ");
+     
+     var pitch125  = ["M -7.5", -37.5+y, "L 7.5", -37.5+y, " "].join(" ");
+     var pitchn125 = ["M -7.5",  37.5+y, "L 7.5",  37.5+y, " "].join(" ");
+     
+     var pitch175  = ["M -7.5", -52.5+y, "L 7.5", -52.5+y, " "].join(" ");
+     var pitchn175 = ["M -7.5",  52.5+y, "L 7.5",  52.5+y, " "].join(" ");
+     
+     var pitchscale = pitch25 + pitchn25 + pitch75 + pitchn75 + pitch125 + pitchn125 + 
+                      pitch175 + pitchn175 + pitch5 + pitch10 + pitch15 + pitch20 + pitchn5 + pitchn10 + pitchn15 + pitchn20;
+     
+     document.getElementById("ADI_pitch").setAttribute("d",pitchscale);
+     
+     //set wings level graphic
+     document.getElementById("ADI_level_wings").setAttribute("d", 
+       "M 20 0 L 60 0 L 60 5 L 25 5 L 25 15 L 20 15 Z M -20 0 L -60 0 L -60 5 L -25 5 L -25 15 L -20 15 Z M -2.5 0 L 2.5 0 L 2.5 5 L -2.5 5 Z");
+   
+    
+     return function(y) {
+       
+       //document.getElementById("ADI_pitch_10").setAttribute("d",pitchscale);
+       document.getElementById("ADI_pitch_10").setAttribute("transform","translate(0,"+y+")");
+       
+     }
+     
+   })();
+   
+   function set_fd(x,y) {
+   
+     var fdh = "M 0 -50 L 0 50";
+     var fdv = "M -50 0 L 50 0";
+     
+     document.getElementById("fd_vert").setAttribute("d",fdv);
+     document.getElementById("fd_hor").setAttribute("d",fdh);
+     
+   }
+
+   function set_fd_roll_pitch(roll,pitch) {
+
+     describeGroundPoly(roll,pitch);
+
+   }
+
+   function describeGroundPoly(roll,pitch) {
+   
+     pitch = 3 * pitch;
+     
+     //fix orientation
+     roll = -roll
+     
+     // define ground poly points
+     var tp_left  = {x: -128, y: 0};
+     var tp_right = {x: 128, y: 0};
+     var bt_left  = {x: -128, y: 512};
+     var bt_right = {x: 128, y: 512};
+     
+     //transform for pitch and roll
+     //pitch translate
+     tp_left = xlate(tp_left,0,pitch);
+     tp_right = xlate(tp_right,0,pitch);
+     bt_left = xlate(bt_left,0,pitch);
+     bt_right = xlate(bt_right,0,pitch);
+     
+     //roll transform
+     tp_left = rotate(tp_left,roll);
+     tp_right = rotate(tp_right,roll);
+     bt_left = rotate(bt_left,roll);
+     bt_right = rotate(bt_right,roll);
+     
+     //move it into view coordinates
+     tp_left = xlate(tp_left,80,80);
+     tp_right = xlate(tp_right,80,80);
+     bt_left = xlate(bt_left,80,80);
+     bt_right = xlate(bt_right,80,80);
+     
+     var top_left  = [tp_left.x,tp_left.y].join(",");
+     var top_right = [tp_right.x,tp_right.y].join(",");
+     var bot_left  = [bt_left.x,bt_left.y].join(",");
+     var bot_right = [bt_right.x,bt_right.y].join(",");
+    
+     var basepoints= [top_left,top_right,bot_right,bot_left].join(" ");
+     
+     //console.log(basepoints);
+     document.getElementById("ADI_ground").setAttribute("points", basepoints);
+     
+
+     //ADI angle pointer
+     var t = ["translate(740,180)",
+               "rotate(",
+               180-roll,
+               ")"].join(" ");
+           
+     
+     //740,181
+     //ADI pitch scale
+     var p = ["translate(741,",
+               181,")",
+               "rotate(",
+               -roll,
+               ")"
+             ].join(" ");
+  
+     //set_ADI_pitch_scale();
+     
+     document.getElementById("ADI_indicator").setAttribute("transform",t); 
+     
+     set_ADI_pitch_scale_y(pitch)
+     document.getElementById("pitch_bars").setAttribute("transform",p);
+     
+   }
+   function polarToCartesian(centerX, centerY, radius, angleInDegrees) {
+     var angleInRadians = (angleInDegrees-90) * Math.PI / 180.0;
+
+     return {
+       x: centerX + (radius * Math.cos(angleInRadians)),
+       y: centerY + (radius * Math.sin(angleInRadians))
+     };
+   }
+
+   function describeArc(x, y, radius, startAngle, endAngle){
+
+     var start = polarToCartesian(x, y, radius, endAngle);
+     var end  = polarToCartesian(x, y, radius, startAngle);
+
+     var arcSweep = endAngle - startAngle <= 180 ? "0" : "1";
+
+     var d = [
+        "M", start.x, start.y, 
+        "A", radius, radius, 0, arcSweep, 0, end.x, end.y
+     ].join(" ");
+
+     return d;       
+   }
+   function describeLineFromCenter(x, y, startRadius, endRadius, Angle){
+
+     var start = polarToCartesian(x, y, startRadius, Angle);
+     var end = polarToCartesian(x, y, endRadius, Angle);
+
+     var d = [
+        "M", start.x, start.y, 
+        "L", end.x, end.y
+     ].join(" ");
+
+     return d;       
+   }
+   function describea(x,y,dx,dy,dgx,dgy){
+     var d=[
+       "M",x,y,
+       "L",x+dx,y
+     ];
+     return d;
+   }
+   function describeb(x,y,dx,dy,dgx,dgy){
+     var d=[
+       "M",x+dx,y+dgy,
+       "L",x+dx,y+dy+dgy
+     ];
+     return d;
+   }
+   function describec(x,y,dx,dy,dgx,dgy){
+     var d=[
+       "M",x+dx,y+dy+dgy+dgy,
+       "L",x+dx,y+dy+dy+dgy+dgy
+     ];
+     return d;
+   }
+   function described(x,y,dx,dy,dgx,dgy){
+     var d= [
+       "M",x,y+dy+dy+dgy+dgy,
+       "L",x+dx,y+dy+dy+dgy+dgy
+     ];
+     return d;
+   }
+   function describee(x,y,dx,dy,dgx,dgy){
+     var d=[
+       "M",x,y+dy+dgy+dgy,
+       "L",x,y+dy+dy+dgy+dgy
+     ];
+     return d;
+   }
+   function describef(x,y,dx,dy,dgx,dgy){
+     var d=[
+       "M",x,y+dgy,
+       "L",x,y+dy+dgy
+     ];
+     return d;
+   }
+   function describeg(x,y,dx,dy,dgx,dgy){
+     var d=[
+       "M",x+dgx,y+dy+dgy,
+       "L",x+dx,y+dy+dgy
+     ];
+     return d;
+   }
+   function describe0(x,y,dx,dy) {
+     if(!dx)
+       var dx=8;
+     if(!dy)
+       var dy=6.4;
+     var dgx=1;
+     var dgy=1;
+     var a = describea(x,y,dx,dy,dgx,dgy);
+     var b = describeb(x,y,dx,dy,dgx,dgy);
+     var c = describec(x,y,dx,dy,dgx,dgy);
+     var d = described(x,y,dx,dy,dgx,dgy);
+     var e = describee(x,y,dx,dy,dgx,dgy);
+     var f = describef(x,y,dx,dy,dgx,dgy);
+    
+     var n=a.concat(b);
+     n=n.concat(c);
+     n=n.concat(d);
+     n=n.concat(e);
+     n=n.concat(f);
+     
+     return n.join(" ");
+   }
+   function describe8(x,y,dx,dy) {
+     if(!dx)
+       var dx=8;
+     if(!dy)
+       var dy=6.4;
+     var dgx=1;
+     var dgy=1;
+     var a = describea(x,y,dx,dy,dgx,dgy);
+     var b = describeb(x,y,dx,dy,dgx,dgy);
+     var c = describec(x,y,dx,dy,dgx,dgy);
+     var d = described(x,y,dx,dy,dgx,dgy);
+     var e = describee(x,y,dx,dy,dgx,dgy);
+     var f = describef(x,y,dx,dy,dgx,dgy);
+     var g = describeg(x,y,dx,dy,dgx,dgy);
+     var n=a.concat(b);
+     n=n.concat(c);
+     n=n.concat(d);
+     n=n.concat(e);
+     n=n.concat(f);
+     n=n.concat(g);
+     
+     return n.join(" ");
+   }
+   function describe3(x,y,dx,dy) {
+     if(!dx)
+       var dx=8;
+     if(!dy)
+       var dy=6.4;
+     var dgx=1;
+     var dgy=1;
+     var a = describea(x,y,dx,dy,dgx,dgy);
+     var b = describeb(x,y,dx,dy,dgx,dgy);
+     var c = describec(x,y,dx,dy,dgx,dgy);
+     var d = described(x,y,dx,dy,dgx,dgy);
+     var g = describeg(x,y,dx,dy,dgx,dgy);
+     
+     var n=a.concat(b);
+     n=n.concat(c);
+     n=n.concat(d);
+     n=n.concat(g);
+     
+     return n.join(" ");
+   }
+   function describe5(x,y,dx,dy) {
+     if(!dx)
+       var dx=8;
+     if(!dy)
+       var dy=6.4;
+     var dgx=1;
+     var dgy=1;
+     var a = describea(x,y,dx,dy,dgx,dgy);
+     var f = describef(x,y,dx,dy,dgx,dgy);
+     var c = describec(x,y,dx,dy,dgx,dgy);
+     var d = described(x,y,dx,dy,dgx,dgy);
+     var g = describeg(x,y,dx,dy,dgx,dgy);
+     
+     var n=a.concat(f);
+     n=n.concat(c);
+     n=n.concat(d);
+     n=n.concat(g);
+     
+     return n.join(" ");
+   }
+   function describe6(x,y,dx,dy) {
+     if(!dx)
+       var dx=8;
+     if(!dy)
+       var dy=6.4;
+     var dgx=1;
+     var dgy=1;
+     var a = describea(x,y,dx,dy,dgx,dgy);
+     var f = describef(x,y,dx,dy,dgx,dgy);
+     var c = describec(x,y,dx,dy,dgx,dgy);
+     var d = described(x,y,dx,dy,dgx,dgy);
+     var e = describee(x,y,dx,dy,dgx,dgy);
+     var g = describeg(x,y,dx,dy,dgx,dgy);
+     
+     var n=a.concat(f);
+     n=n.concat(c);
+     n=n.concat(d);
+     n=n.concat(e);
+     n=n.concat(g);
+     
+     return n.join(" ");
+   }
+   function describe7(x,y,dx,dy) {
+     if(!dx)
+       var dx=8;
+     if(!dy)
+       var dy=6.4;
+     var dgx=1;
+     var dgy=1;
+     var a = describea(x,y,dx,dy,dgx,dgy);
+     var b = describeb(x,y,dx,dy,dgx,dgy);
+     var c = describec(x,y,dx,dy,dgx,dgy);
+     
+     var n=a.concat(b);
+     n=n.concat(c);
+     
+     return n.join(" ");
+   }
+   function describe1(x,y,dx,dy) {
+     if(!dx)
+       var dx=8;
+     if(!dy)
+       var dy=6.4;
+     var dgx=1;
+     var dgy=1;
+     
+     var b = describeb(x,y,dx,dy,dgx,dgy);
+     var c = describec(x,y,dx,dy,dgx,dgy);
+     
+     var n=b.concat(c);
+   
+     return n.join(" ");
+   }
+   function describe2(x,y,dx,dy) {
+     if(!dx)
+       var dx=8;
+     if(!dy)
+       var dy=6.4;
+     var dgx=1;
+     var dgy=1;
+     var a = describea(x,y,dx,dy,dgx,dgy);
+     var b = describeb(x,y,dx,dy,dgx,dgy);
+     var e = describee(x,y,dx,dy,dgx,dgy);
+     var d = described(x,y,dx,dy,dgx,dgy);
+     var g = describeg(x,y,dx,dy,dgx,dgy);
+     
+     var n=a.concat(b);
+     n=n.concat(e);
+     n=n.concat(d);
+     n=n.concat(g);
+     
+     return n.join(" ");
+   }
+   function describe9(x,y,dx,dy) {
+     if(!dx)
+       var dx=8;
+     if(!dy)
+       var dy=6.4;
+     var dgx=1;
+     var dgy=1;
+     var a = describea(x,y,dx,dy,dgx,dgy);
+     var b = describeb(x,y,dx,dy,dgx,dgy);
+     var c = describec(x,y,dx,dy,dgx,dgy);
+     var f = describef(x,y,dx,dy,dgx,dgy);
+     var g = describeg(x,y,dx,dy,dgx,dgy);
+     
+     var n=a.concat(b);
+     n=n.concat(c);
+     n=n.concat(f);
+     n=n.concat(g);
+     
+     return n.join(" ");
+   }
+   function describe4(x,y,dx,dy) {
+     if(!dx)
+       var dx=8;
+     if(!dy)
+       var dy=6.4;
+     var dgx=1;
+     var dgy=1;
+     
+     var b = describeb(x,y,dx,dy,dgx,dgy);
+     var c = describec(x,y,dx,dy,dgx,dgy);
+     var f = describef(x,y,dx,dy,dgx,dgy);
+     var g = describeg(x,y,dx,dy,dgx,dgy);
+     
+     var n=b.concat(c);
+     n=n.concat(f);
+     n=n.concat(g);
+    
+     return n.join(" ");
+  }
+  
+  function describe7seg(val,x,y,dx,dy) {
+    if(!dx)
+      var dx=8;
+    if(!dy)
+      var dy=6.4;
+    var dgx=1;
+    var dgy=1;
+    
+    var d;
+    switch(val) {
+      case 0:
+        d=describe0(x,y,dx,dy);
+        break;
+      case 1:
+        d=describe1(x,y,dx,dy);
+        break;
+      case 2:
+        d=describe2(x,y,dx,dy);
+        break;
+      case 3:
+        d=describe3(x,y,dx,dy);
+        break;
+      case 4:
+        d=describe4(x,y,dx,dy);
+        break;
+      case 5:
+        d=describe5(x,y,dx,dy);
+        break;
+      case 6:
+        d=describe6(x,y,dx,dy);
+        break;
+      case 7:
+        d=describe7(x,y,dx,dy);
+        break;
+      case 8:
+        d=describe8(x,y,dx,dy);
+        break;
+      case 9:
+        d=describe9(x,y,dx,dy);
+        break;
+      default:
+        d=describeg(x,y,dx,dy);
+        break;
+    }
+    return d;
+  }
+  
+  var No1Fuel = 4200;
+  var No2Fuel = 4200;
+  var CtrFuel = 20;
+  
+  var No1Gauge = 7300;
+  var No2Gauge = 7300;
+  var CtrGauge = 16000;
+  
+  var Thrust = 0;
+  var N1_1 = 45;
+  
+  var roll = 0;
+  var pitch = 0;
+  var adi_pbit_phase = 0;
+  
+  var wpt_y = 80;
+  
+  function setThrust(Throttle) {
+    //0-110
+    if (Throttle>110) Throttle=110;
+    if (Throttle<0) Throttle = 0;
+    N1_1 = (2.25*Throttle+45);
+    document.getElementById("N1marker").setAttribute("d", describeLineFromCenter(0,0,37,50,N1_1));
+  }
+  
+  function PBITon() {
+
+     describeGroundPoly(roll,pitch);
+     
+     if(adi_pbit_phase == 0) {
+       roll  = roll  + 1;
+       pitch = pitch + 1;
+       if(roll>60) roll = 60;
+       if(pitch>20) pitch = 20;
+       
+       if (roll>59) adi_pbit_phase = 1;
+     }
+     else if(adi_pbit_phase == 1){
+       pitch = pitch - 0.5;
+       roll = roll - 1;
+       if (roll<-60) adi_pbit_phase = 2;
+     }
+     else if(adi_pbit_phase == 2){
+       roll = roll + 1;
+       if (roll>0) adi_pbit_phase = 3;
+       if (pitch<0) pitch++;
+     }
+     else {
+       roll = 0;
+       pitch = 0;
+     }
+     
+     if (Thrust<110)
+       Thrust+=1;
+       
+     setThrust(Thrust);
+     setN1(22.5/10*Thrust+45,500,100,"E2");
+     decToReading();
+     
+     moveWPT(wpt_y);
+     wpt_y+=2;
+  }
+  
+  function unitsbreakdown(q) {
+    var units = [];
+    for(i=0;i<5;i++) {
+      units[i] = Math.floor(q%10);
+      q=q/10;
+    }  
+    return units;
+  }
+  
+  function decToReading() {
+    a = decToFuelNo1();
+    b = decToFuelNo2();
+    c = decToFuelCtr();
+    
+    if(a || b || c) {
+    }
+    else
+      clearInterval(PBITInterval);
+  }
+  
+  function decToFuelNo1() {
+    if(No1Gauge != No1Fuel) {
+      No1Gauge -= 20;
+      setFuelNo1Display(-120 + (No1Gauge * 240)/7600,No1Gauge); 
+      unitsbreakdown(No1Fuel);
+      return 1;
+    }
+    else return 0;
+  }
+  
+  function decToFuelNo2() {
+    if(No2Gauge != No2Fuel) {
+      No2Gauge -= 20;
+      setFuelNo2Display(-120 + (No2Gauge * 240)/7600,No2Gauge); 
+      return 1;
+    }
+    else return 0;
+  }
+  
+  function decToFuelCtr() {
+    if(CtrGauge != CtrFuel) {
+      CtrGauge -= 20;
+      setFuelCtrDisplay(-120 + (CtrGauge * 240)/16000,CtrGauge); 
+      return 1;
+    }
+    else return 0;
+  }
+  
+  function setFuelNo1Display(Angle,No1FQ) {
+    var ypos = 600;
+    //range arc
+    document.getElementById("arc10").setAttribute("d", describeArc(100, ypos, 34, -120, 120));
+    
+    //variable indicator
+    document.getElementById("arc11").setAttribute("d", describeArc(100, ypos, 38, -120, Angle));
+    
+    var digits = unitsbreakdown(No1FQ);
+    
+    document.getElementById("FT1_1k").setAttribute("d", describe7seg(digits[3],90,ypos-5));
+    document.getElementById("FT1_100").setAttribute("d", describe7seg(digits[2],90+12,ypos-5+3,6,4.8));
+    document.getElementById("FT1_10").setAttribute("d", describe7seg(digits[1],90+22,ypos-5+3,6,4.8));
+    document.getElementById("FT1_1").setAttribute("d", describe7seg(digits[0],90+32,ypos-5+3,6,4.8));
+  }
+  
+  function setFuelNo2Display(Angle, No2FQ) {
+    var ypos = 600;
+    
+    document.getElementById("arc20").setAttribute("d", describeArc(200, ypos, 34, -120, 120));
+    
+    document.getElementById("arc21").setAttribute("d", describeArc(200, ypos, 38, -120, Angle));
+    
+    var digits = unitsbreakdown(No2FQ);
+    
+    document.getElementById("FT2_1k").setAttribute("d", describe7seg(digits[3],190,ypos-5));
+    document.getElementById("FT2_100").setAttribute("d", describe7seg(digits[2],190+12,ypos-5+3,6,4.8));
+    document.getElementById("FT2_10").setAttribute("d", describe7seg(digits[1],190+22,ypos-5+3,6,4.8));
+    document.getElementById("FT2_1").setAttribute("d", describe7seg(digits[0],190+32,ypos-5+3,6,4.8));
+  }
+  
+  function setFuelCtrDisplay(Angle,CtrFQ) {
+    var ypos = 500;
+    document.getElementById("arcctr0").setAttribute("d", describeArc(150, ypos, 34, -120, 120));
+    
+    document.getElementById("arcctr1").setAttribute("d", describeArc(150, 500, 38, -120, Angle));
+    
+    var digits = unitsbreakdown(CtrFQ);
+   
+    document.getElementById("FTCTR_10k").setAttribute("d",describe7seg(digits[4],140-12,ypos-5));
+    document.getElementById("FTCTR_1k").setAttribute("d", describe7seg(digits[3],140,ypos-5));
+    document.getElementById("FTCTR_100").setAttribute("d",describe7seg(digits[2],140+12,ypos-5+3,6,4.8));
+    document.getElementById("FTCTR_10").setAttribute("d", describe7seg(digits[1],140+22,ypos-5+3,6,4.8));
+    document.getElementById("FTCTR_1").setAttribute("d",  describe7seg(digits[0],140+32,ypos-5+3,6,4.8));
+  }
+  
+  function drawNGauge(cx,cy) {
+    var cx = 0;
+    var cy = 0;
+    var E2N1 = document.getElementById("E2N1");
+    E2N1.setAttribute("cx",cx);
+    E2N1.setAttribute("cy",cy);
+   
+    document.getElementById("E2N1arc").setAttribute("d", describeArc(cx, cy, 34, 45, 90));
+    document.getElementById("E2N1arcgreen").setAttribute("d", describeArc(cx, cy, 34, 90, 270));
+    document.getElementById("E2N1arcred").setAttribute("d", describeArc(cx, cy, 34, 270, 290));
+    document.getElementById("E2N1arcwhite").setAttribute("d", describeArc(cx, cy, 34, 290, 315));
+    document.getElementById("E2N1marker").setAttribute("d", describeLineFromCenter(cx, cy,37,50,45));
+  
+    var od = 36;
+    var id = 30;
+    
+    document.getElementById("E2N1_0").setAttribute("d", describeLineFromCenter(cx,cy,id,od,45));
+    document.getElementById("E2N1_1").setAttribute("d", describeLineFromCenter(cx,cy,id,od,45+22.5));
+    document.getElementById("E2N1_2").setAttribute("d", describeLineFromCenter(cx,cy,id,od,45+45));
+    document.getElementById("E2N1_3").setAttribute("d", describeLineFromCenter(cx,cy,id,od,45+45+22.5));
+    document.getElementById("E2N1_4").setAttribute("d", describeLineFromCenter(cx,cy,id,od,45+45+45));
+    document.getElementById("E2N1_5").setAttribute("d", describeLineFromCenter(cx,cy,id,od,45+45+45+22.5));
+    document.getElementById("E2N1_6").setAttribute("d", describeLineFromCenter(cx,cy,id,od,180));
+    document.getElementById("E2N1_7").setAttribute("d", describeLineFromCenter(cx,cy,id,od,180+22.5));
+    document.getElementById("E2N1_8").setAttribute("d", describeLineFromCenter(cx,cy,id,od,180+45));
+    document.getElementById("E2N1_9").setAttribute("d", describeLineFromCenter(cx,cy,id,od,180+45+22.5));
+    document.getElementById("E2N1_10").setAttribute("d", describeLineFromCenter(cx,cy,id,od,180+45+45));
+    document.getElementById("E2N1_11").setAttribute("d", describeLineFromCenter(cx,cy,id-6,od,180+45+45+22.5));
+    document.getElementById("E2N1_12").setAttribute("d", describeLineFromCenter(cx,cy,id,od,180+45+45+45));
+  }
+  function setN1(N1,cx,cy,Engine) {
+  
+    cx=0
+    cy=0
+    document.getElementById("E2N1marker").setAttribute("d", describeLineFromCenter(cx,cy,37,50,N1));
+  
+  }
+  function moveWPT(y){
+  
+    document.getElementById("wp1").setAttribute("cy", y);
+    
+  }
+  function drawFuelGauges() {
+    //var y1 = 600;
+    //var y2 = 600;
+    //var yctr = 500;
+    
+    //document.getElementById("arc10").setAttribute("d", describeArc(100, y1, 34, -120, 120));
+    //document.getElementById("arc11").setAttribute("d", describeArc(100, y1, 38, -120, 0));
+  
+    //document.getElementById("arc20").setAttribute("d", describeArc(200, y2, 34, -120, 120));
+    //document.getElementById("arc21").setAttribute("d", describeArc(200, y2, 38, -120, 0));
+  
+    //document.getElementById("arcctr0").setAttribute("d", describeArc(150, yctr, 34, -120, 120));
+    //document.getElementById("arcctr1").setAttribute("d", describeArc(150, yctr, 38, -120, 0));
+    
+    //document.getElementById("FT1_1k").setAttribute("d", describe6(90,y1-5));
+    //document.getElementById("FT1_100").setAttribute("d", describe3(90+12,y1-5+3,6,4.8));
+    //document.getElementById("FT1_10").setAttribute("d", describe4(90+22,y1-5+3,6,4.8));
+    //document.getElementById("FT1_1").setAttribute("d", describe5(90+32,y1-5+3,6,4.8));
+    
+    //document.getElementById("FT2_1k").setAttribute("d", describe6(190,y2-5));
+    //document.getElementById("FT2_100").setAttribute("d", describe9(190+12,y2-5+3,6,4.8));
+    //document.getElementById("FT2_10").setAttribute("d", describe1(190+22,y2-5+3,6,4.8));
+    //document.getElementById("FT2_1").setAttribute("d", describe2(190+32,y2-5+3,6,4.8));
+  
+    //document.getElementById("FTCTR_1k").setAttribute("d", describe0(140,yctr-5));
+    //document.getElementById("FTCTR_100").setAttribute("d", describe0(140+12,yctr-5+3,6,4.8));
+    //document.getElementById("FTCTR_10").setAttribute("d", describe8(140+22,yctr-5+3,6,4.8));
+    //document.getElementById("FTCTR_1").setAttribute("d", describe7(140+32,yctr-5+3,6,4.8));
+  
+  }
+  
+  function loadIt() {
+  
+    PBITInterval = setInterval(PBITon,20);
+  
+    drawFuelGauges();
+    
+    loadIt2();
+    
+    drawNGauge(500,100);
+    
+  }
+  function draw_HSI_waypoint(p,cx,cy,radius,angle) {
+
+    xy = polarToCartesian(cx, cy, radius, angle); 
+
+    draw_HSI_waypoint_symbol(p,xy.x,xy.y);
+
+  }
+  function draw_HSI_waypoint_symbol(p,xx,yy) {
+
+    let x = "".concat(xx);
+    let y = "".concat(yy);
+    let n = "http://www.w3.org/2000/svg";
+    w0 = document.createElementNS(n,"circle");
+    w0.setAttributeNS(null,"id","wp2" );
+    w0.setAttributeNS(null,"cx",x);
+    w0.setAttributeNS(null,"cy",y );
+    w0.setAttributeNS(null,"r","4" );
+    w0.setAttributeNS(null,"stroke","green");
+    p.appendChild(w0);
+  }
+  function loadIt2() {
+  
+    var cx = 0;
+    var cy = 0;
+
+    var od = 36;
+    var id = 30;
+
+    var E1N1 = document.getElementById("E1N1");
+    E1N1.setAttribute("cx",cx);
+    E1N1.setAttribute("cy",cy);
+    
+    document.getElementById("arcN1").setAttribute("d", describeArc(cx,cy, 34, 45, 90));
+    document.getElementById("arcN1green").setAttribute("d", describeArc(cx,cy, 34, 90, 270));
+    document.getElementById("arcN1red").setAttribute("d", describeArc(cx,cy, 34, 270, 290));
+    document.getElementById("arcN1white").setAttribute("d", describeArc(cx,cy, 34, 290, 315));
+    document.getElementById("N1marker").setAttribute("d", describeLineFromCenter(cx,cy,37,50,45));
+
+    document.getElementById("E1N1_0").setAttribute("d", describeLineFromCenter(cx,cy,id,od,45));
+    document.getElementById("E1N1_1").setAttribute("d", describeLineFromCenter(cx,cy,id,od,45+22.5));
+    document.getElementById("E1N1_2").setAttribute("d", describeLineFromCenter(cx,cy,id,od,45+45));
+    document.getElementById("E1N1_3").setAttribute("d", describeLineFromCenter(cx,cy,id,od,45+45+22.5));
+    document.getElementById("E1N1_4").setAttribute("d", describeLineFromCenter(cx,cy,id,od,45+45+45));
+    document.getElementById("E1N1_5").setAttribute("d", describeLineFromCenter(cx,cy,id,od,45+45+45+22.5));
+    document.getElementById("E1N1_6").setAttribute("d", describeLineFromCenter(cx,cy,id,od,180));
+    document.getElementById("E1N1_7").setAttribute("d", describeLineFromCenter(cx,cy,id,od,180+22.5));
+    document.getElementById("E1N1_8").setAttribute("d", describeLineFromCenter(cx,cy,id,od,180+45));
+    document.getElementById("E1N1_9").setAttribute("d", describeLineFromCenter(cx,cy,id,od,180+45+22.5));
+    document.getElementById("E1N1_10").setAttribute("d", describeLineFromCenter(cx,cy,id,od,180+45+45));
+    document.getElementById("E1N1_11").setAttribute("d", describeLineFromCenter(cx,cy,id-6,od,180+45+45+22.5));
+    document.getElementById("E1N1_12").setAttribute("d", describeLineFromCenter(cx,cy,id,od,180+45+45+45));
+    
+    //document.getElementById("ADI_roll").setAttribute("d", describeArc(80,80,75,-60,60));
+    
+    document.getElementById("ADI_roll0").setAttribute("d", describeLineFromCenter(80,80,75,83,0));
+    document.getElementById("ADI_roll10").setAttribute("d", describeLineFromCenter(80,80,75,83,10));
+    document.getElementById("ADI_roll10n").setAttribute("d", describeLineFromCenter(80,80,75,83,-10));
+    document.getElementById("ADI_roll20").setAttribute("d", describeLineFromCenter(80,80,75,83,20));
+    document.getElementById("ADI_roll20n").setAttribute("d", describeLineFromCenter(80,80,75,83,-20));
+    document.getElementById("ADI_roll30").setAttribute("d", describeLineFromCenter(80,80,75,90,30));
+    document.getElementById("ADI_roll30n").setAttribute("d", describeLineFromCenter(80,80,75,90,-30));
+    document.getElementById("ADI_roll45").setAttribute("d", describeLineFromCenter(80,80,75,80,45));
+    document.getElementById("ADI_roll45n").setAttribute("d", describeLineFromCenter(80,80,75,80,-45));
+    document.getElementById("ADI_roll60").setAttribute("d", describeLineFromCenter(80,80,75,80,60));
+    document.getElementById("ADI_roll60n").setAttribute("d", describeLineFromCenter(80,80,75,80,-60));
+    
+    
+    document.getElementById("range1").setAttribute("d", describeArc(0,300,60,270,90));
+    document.getElementById("range2").setAttribute("d", describeArc(0,300,120,270,90));
+    document.getElementById("range3").setAttribute("d", describeArc(0,300,180,270,90));
+    document.getElementById("range4").setAttribute("d", describeArc(0,300,240,270,90));
+    
+    //set_ADI_pitch_scale();
+    describeGroundPoly(0,0);
+    
+    set_fd(0,0);
+    
+    //create some svg 
+    var p = document.getElementById("waypoints");
+    console.log(p);
+    var n = "http://www.w3.org/2000/svg";
+    w = document.createElementNS(n,"circle");
+    
+    w.setAttributeNS(null,"id","wp1" );
+    w.setAttributeNS(null,"cx","0" );
+    w.setAttributeNS(null,"cy","160" );
+    w.setAttributeNS(null,"r","10" );
+    w.setAttributeNS(null,"stroke","red");
+    console.log(w);
+    p.appendChild(w);
+    
+    w0 = document.createElementNS(n,"circle");
+    w0.setAttributeNS(null,"id","wp2" );
+    w0.setAttributeNS(null,"cx","10" );
+    w0.setAttributeNS(null,"cy","10" );
+    w0.setAttributeNS(null,"r","10" );
+    w0.setAttributeNS(null,"stroke","green");
+    //console.log(w0);
+    p.appendChild(w0);
+
+
+    initweb();
+        
+    draw_HSI_waypoint(p,0,300,100,30);
+    draw_HSI_waypoint_symbol(p,100,100);
+    draw_HSI_waypoint_symbol(p,100,10);
+    //web it
+    //doWeb();
+    window.addEventListener('deviceorientation', handleOrientation);
+
+  }
+  
+
+function handleOrientation(event) {
+  const alpha = event.alpha; // Z-axis rotation
+  const beta = event.beta;   // X-axis rotation
+  const gamma = event.gamma; // Y-axis rotation
+  // Do stuff with the orientation data
+  set_fd_roll_pitch(beta,gamma);
+}
+
+    </script>
+    <script src="webpart.js">
+
+
+    </script>
+    </html>
